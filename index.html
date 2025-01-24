@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Domain Name Generator Tool - Generate unique domain names easily. Mobile-friendly and SEO optimized.">
+    <meta name="keywords" content="Domain Name Generator, Free Domain Tool, SEO Tools, Domain Ideas, Mobile Friendly Tool">
+    <meta name="author" content="Your Website Name">
+    <title>Get a New Domain - Find New Domain</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #007BFF;
+        }
+        input[type="text"] {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+            transition: all 0.2s ease-in-out;
+        }
+        .extensions-box {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin: 15px 0;
+        }
+        .extension-item {
+            background-color: #e0e7ff;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .extension-item:hover {
+            background-color: #007BFF;
+            color: #fff;
+            transform: scale(1.1);
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            background: #f9f9f9;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: left;
+            word-wrap: break-word;
+            border: 1px solid #ddd;
+        }
+        li a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        li a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+        .ads {
+            margin-top: 20px;
+        }
+        .feedback-section {
+            margin-top: 30px;
+        }
+        .feedback-section textarea {
+            width: 90%;
+            height: 80px;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .feedback-section button {
+            background-color: #28a745;
+            color: white;
+        }
+        body.dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Get a New Domain</h1>
+        <p>Generate creative and unique domain names instantly!</p>
+        <input type="text" id="keyword" placeholder="Enter a keyword (e.g., tech, shop)">
+        <button onclick="generateDomains()">Search Domains</button>
+
+        <h2>Popular Extensions:</h2>
+        <div class="extensions-box">
+            <span class="extension-item" onclick="addExtension('.com')">.com</span>
+            <span class="extension-item" onclick="addExtension('.in')">.in</span>
+            <span class="extension-item" onclick="addExtension('.org')">.org</span>
+            <span class="extension-item" onclick="addExtension('.net')">.net</span>
+            <span class="extension-item" onclick="addExtension('.online')">.online</span>
+            <span class="extension-item" onclick="addExtension('.tech')">.tech</span>
+            <span class="extension-item" onclick="addExtension('.store')">.store</span>
+            <span class="extension-item" onclick="addExtension('.info')">.info</span>
+        </div>
+
+        <h2>Suggested Domains:</h2>
+        <ul id="domainList"></ul>
+
+        <div class="ads">
+            <script async="async" data-cfasync="false" src="//dipperflightrecommend.com/86599a21d623dbbded3f3c8e46481870/invoke.js"></script>
+            <div id="container-86599a21d623dbbded3f3c8e46481870"></div>
+        </div>
+
+        <div class="feedback-section">
+            <h2>Give Feedback</h2>
+            <textarea placeholder="Write your feedback here..."></textarea>
+            <button>Submit Feedback</button>
+        </div>
+
+        <div class="footer">
+            © 2025 Your Website Name. All rights reserved.
+        </div>
+    </div>
+
+    <script>
+        function generateDomains() {
+            const keywordInput = document.getElementById('keyword');
+            const domainList = document.getElementById('domainList');
+            const suffixes = ['.com', '.net', '.org', '.io', '.tech', '.store', '.online', '.info', '.in', '.us', '.biz', '.site', '.shop', '.me', '.pro', '.co', '.xyz'];
+
+            let keyword = keywordInput.value.trim().toLowerCase();
+            const selectedExtension = keyword.match(/\.\w+$/); // Extract any extension from input
+            keyword = keyword.replace(/\.\w+$/, ''); // Remove the extension from input
+
+            domainList.innerHTML = '';
+
+            if (!keyword) {
+                alert('Please enter a keyword to generate domains.');
+                return;
+            }
+
+            // Generate domain suggestions
+            if (selectedExtension) {
+                const selectedDomain = keyword + selectedExtension[0];
+                const listItem = document.createElement('li');
+
+                // Make the selected domain clickable with affiliate link
+                const link = document.createElement('a');
+                link.href = `https://bigrock-in.sjv.io/c/5991171/2083148/5632?u=https://${selectedDomain}`;
+                link.target = '_blank';
+                link.rel = 'nofollow';
+                link.textContent = selectedDomain;
+
+                listItem.innerHTML = '';
+                listItem.appendChild(link);
+                domainList.appendChild(listItem);
+            }
+
+            suffixes.forEach(suffix => {
+                if (!selectedExtension || suffix !== selectedExtension[0]) {
+                    const domain = keyword + suffix;
+                    const listItem = document.createElement('li');
+
+                    // Make the domain clickable with affiliate link
+                    const link = document.createElement('a');
+                    link.href = `https://bigrock-in.sjv.io/c/5991171/2083148/5632?u=https://${domain}`;
+                    link.target = '_blank';
+                    link.rel = 'nofollow';
+                    link.textContent = domain;
+
+                    listItem.innerHTML = '';
+                    listItem.appendChild(link);
+                    domainList.appendChild(listItem);
+                }
+            });
+        }
+
+        function addExtension(extension) {
+            const keywordInput = document.getElementById('keyword');
+            const keyword = keywordInput.value.trim().toLowerCase().replace(/\.\w+$/, ''); // Remove any existing extension
+            keywordInput.value = keyword + extension;
+        }
+
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>
